@@ -16,6 +16,16 @@ Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
 
+```
+heroku login
+heroku create --remote hawkins stranger-things
+heroku create --remote upside-down stranger-things-up-down
+git add .
+git commit -m "Requisito 6"
+git push stranger-things pedro-tofani:master
+git push stranger-things-up-down pedro-tofani:master
+```
+
 ### 7 - Monitoramento
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
