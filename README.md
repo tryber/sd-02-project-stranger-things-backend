@@ -20,6 +20,8 @@ Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 heroku login
 heroku create --remote hawkins stranger-things
 heroku create --remote upside-down stranger-things-up-down
+heroku config:set upsideDown="false" --app stranger-things
+heroku config:set upsideDown="true" --app stranger-things-up-down
 git add .
 git commit -m "Requisito 6"
 git push stranger-things pedro-tofani:master
