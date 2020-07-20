@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ecosystem.config.yml",
+    "start": "pm2-runtime start ecosystem.config.yml",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:watch": "nodemon index.js",
-    "start:dev": "pm2 start index.js --name watch_backend_stranger_things --watch"
+    "start:dev": "pm2-runtime start index.js --name watch_backend_stranger_things --watch"
   },
   "keywords": [],
   "author": "",
