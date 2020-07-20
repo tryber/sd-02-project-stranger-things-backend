@@ -14,8 +14,6 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
-
 Hawkins:
 
 `heroku create --remote hawkins guicgs-st-backend`
@@ -37,8 +35,6 @@ Upside-down:
 ### 7 - Monitoramento
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
-
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
 
 Hawkins:
 
