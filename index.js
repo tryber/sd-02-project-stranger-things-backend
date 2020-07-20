@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 
 const PORT = process.env.PORT || 3000;
-console.log(process.env.PORT);
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
