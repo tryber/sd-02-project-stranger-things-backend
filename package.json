@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start ecosystem.config.yml",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:watch": "nodemon index.js",
+    "start:dev": "pm2 start index.js --name watch_backend_stranger_things --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "flipout": "^1.0.0"
+    "flipout": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "pm2": "^4.4.0"
   }
 }
