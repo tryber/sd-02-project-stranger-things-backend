@@ -14,10 +14,41 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+Hawkins:
+
+`heroku create --remote hawkins guicgs-st-backend`
+
+`heroku config:set UPSIDE_DOWN=false --remote hawkins`
+
+`git push hawkins guicgs-stranger-things-backend:master`
+
+
+Upside-down:
+
+`heroku create --remote upside-down guicgs-st-backend-upside`
+
+`heroku config:set UPSIDE_DOWN=true --remote upside-down`
+
+`git push upside-down guicgs-stranger-things-backend:master`
+
 
 ### 7 - Monitoramento
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+Hawkins:
+
+`heroku config:set PM2_PUBLIC_KEY=xxxxxxxxxx --remote hawkins`
+
+`heroku config:set PM2_SECRET_KEY=xxxxxxxxxx --remote hawkins`
+
+`heroku config:set PM2_MACHINE_NAME=hawkins_api --remote hawkins`
+
+
+Upside-down:
+
+`heroku config:set PM2_PUBLIC_KEY=xxxxxxxxxx --remote upside-down`
+
+`heroku config:set PM2_SECRET_KEY=xxxxxxxxxx --remote upside-down`
+
+`heroku config:set PM2_MACHINE_NAME=upside_down_api --remote upside-down`
