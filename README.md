@@ -14,7 +14,9 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+heroku create --remote hawkins --app andrey-ts-hawkins
+heroku config:set UPSIDE_DOWN=false --app andrey-ts-hawkins
+git push andrey-stranger-things:master
 
 ### 7 - Monitoramento
 
