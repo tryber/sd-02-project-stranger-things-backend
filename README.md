@@ -36,10 +36,10 @@ Para conseguir realizar o monitoramento da minha API, fiz o seguinte procediment
 heroku config:set \
 PM2_PUBLIC_KEY=CHAVE_PUBLICA \
 PM2_SECRET_KEY=CHAVE_PRIVADA \
-PM2_MACHINE_NAME=stranger-things-trybe \
---app floating-fortress-3665
+PM2_MACHINE_NAME=stranger1 \
+--app floating-fortress-36656
 heroku config:set \
-PM2_PUBLIC_KEY=CHAVE_PUBLICA \
-PM2_SECRET_KEY=CHAVE_PRIVADA \
-PM2_MACHINE_NAME=stranger-things-trybe2 \
+PM2_PUBLIC_KEY=1w4slu353c5d4vy \
+PM2_SECRET_KEY=kw7ispwaipe7m8s \
+PM2_MACHINE_NAME=stranger2 \
 --app obscure-basin-84879
