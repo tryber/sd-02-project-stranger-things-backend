@@ -1,3 +1,5 @@
+# Seja bem-vindo(a) à minha branch de deploy do projeto Stranger Things Back-End, siga os passos corretamente e divirta-se.
+---
 # Passo 1:
 
 * Crie sua aplicação, utilize o terminal já na pasta clonada do projeto.
