@@ -21,6 +21,7 @@ app.use(cors());
 const hereIsTheUpsideDown = process.env.UP_DOWN === 'true';
 
 app.get('/', (req, res) => {
+  console.log(`Estou aqui na porta ${PORT}`)
   const characters = strangerThingsService.search(
     req.query,
     hereIsTheUpsideDown
