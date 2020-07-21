@@ -36,6 +36,6 @@ Para conseguir realizar o monitoramento da minha API, fiz o seguinte procediment
 
 ```
 heroku config:set PM2_PUBLIC_KEY=CHAVE_PUBLICA PM2_SECRET_KEY=CHAVE_PRIVADA PM2_MACHINE_NAME=pedro-pc --app stranger-things
-heroku config:set PM2_PUBLIC_KEY=CHAVE_PUBLICA PM2_SECRET_KEY=CHAVE_PRIVADA PM2_MACHINE_NAME=pedro-pc \
+heroku config:set PM2_PUBLIC_KEY=CHAVE_PUBLICA PM2_SECRET_KEY=CHAVE_PRIVADA PM2_MACHINE_NAME=pedro-pc-1 \
 --app stranger-things-up-down
 ```
