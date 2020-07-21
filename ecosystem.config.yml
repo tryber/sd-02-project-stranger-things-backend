@@ -1,5 +1,5 @@
 apps:
-  - name: app_miguel_stranger_things_backend
+  - name: app_stranger_things
     script: ./index.js
     exec_mode: cluster
     instances: 2
