@@ -39,7 +39,7 @@ PM2_SECRET_KEY=CHAVE_PRIVADA \
 PM2_MACHINE_NAME=stranger1 \
 --app floating-fortress-36656
 heroku config:set \
-PM2_PUBLIC_KEY=1w4slu353c5d4vy \
-PM2_SECRET_KEY=kw7ispwaipe7m8s \
+PM2_PUBLIC_KEY=CHAVE_PRIVADA \
+PM2_SECRET_KEY=CHAVE_PUBLICA \
 PM2_MACHINE_NAME=stranger2 \
 --app obscure-basin-84879
