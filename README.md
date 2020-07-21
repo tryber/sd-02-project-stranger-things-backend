@@ -14,10 +14,26 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+`heroku create richard-st-hawkings`
+
+`git remote rename heroku hawkings`
+
+`heroku create richard-st-upsidedown`
+
+`git remote rename heroku upsidedown`
+
+`heroku config:set UPSIDE_DOWN=false -a richard-st-hawkings`
+
+`heroku config:set UPSIDE_DOWN=true -a richard-st-upsidedown`
+
+`git push hawkings richard/backend:master`
+
+`git push upsidedown richard/backend:master`
 
 ### 7 - Monitoramento
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+`heroku config:set PM2_PUBLIC_KEY={Chave Pública} PM2_SECRET_KEY={Chave Secreta} PM2_SERVER_NAME=hawkings -a richard-st-hawkings`
+
+`heroku config:set PM2_PUBLIC_KEY={Chave Pública} PM2_SECRET_KEY={Chave Secreta} PM2_SERVER_NAME=upsidedown -a richard-st-upsidedown`
