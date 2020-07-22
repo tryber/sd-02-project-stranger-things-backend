@@ -22,6 +22,8 @@ git add .
 git commit -m "mensagem"
 git push jct-hawkins-2801 julio-cezar-stranger-back:master
 git push jct-upside-down-2801 julio-cezar-stranger-back:master
+heroku config:set UPSIDE_DOWN="true" --app jct-hawkins-2801
+heroku config:set UPSIDE_DOWN="false" --app jct-upside-down-2801
 
 ### 7 - Monitoramento
 
