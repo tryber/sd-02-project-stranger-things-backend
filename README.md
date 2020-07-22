@@ -15,6 +15,10 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
+heroku create --remote hawkins miguelito-hawkins
+heroku create --remote upside-down miguelito-upside-down
+heroku config:set UPSIDE_DOWN_MODE="FALSE" --app miguelito-hawkins
+heroku config:set UPSIDE_DOWN_MODE="TRUE" --app miguelito-upside-down
 
 ### 7 - Monitoramento
 
