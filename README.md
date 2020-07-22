@@ -29,4 +29,14 @@ heroku config:set UPSIDE_DOWN="false" --app jct-upside-down-2801
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+heroku config:set \
+PM2_PUBLIC_KEY=PUBLIC KEY \
+PM2_SECRET_KEY=SECRET KEY \
+PM2_MACHINE_NAME=hawkins \
+-a jct-hawkins-2801
+
+heroku config:set \
+PM2_PUBLIC_KEY=PUBLIC KEY \
+PM2_SECRET_KEY=SECRET KEY \
+PM2_MACHINE_NAME=upsideDown \
+-a jct-upside-down-2801
