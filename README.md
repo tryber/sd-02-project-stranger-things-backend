@@ -19,6 +19,8 @@ heroku create --remote hawkins miguelito-hawkins
 heroku create --remote upside-down miguelito-upside-down
 heroku config:set UPSIDE_DOWN_MODE="FALSE" --app miguelito-hawkins
 heroku config:set UPSIDE_DOWN_MODE="TRUE" --app miguelito-upside-down
+git push hawkins miguel-stranger-things:master
+git push upside-down miguel-stranger-things:master
 
 ### 7 - Monitoramento
 
