@@ -18,6 +18,9 @@ comandos:
 
 heroku create jc-hawkins-2801
 heroku create jc-upside-down-2801
+git add .
+git commit -m "mensagem"
+git push heroku julio-cezar-stranger-back:master
 
 ### 7 - Monitoramento
 
