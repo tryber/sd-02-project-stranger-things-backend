@@ -14,7 +14,10 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+comandos:
+
+heroku create jc-hawkins-2801
+heroku create jc-upside-down-2801
 
 ### 7 - Monitoramento
 
