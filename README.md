@@ -16,8 +16,8 @@ Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
 comandos:
 
-heroku create --remote jct-hawkins-2801
-heroku create --remote jct-upside-down-2801
+heroku create jct-hawkins-2801 --remote jct-hawkins-2801
+heroku create jct-upside-down-2801 --remote jct-upside-down-2801
 git add .
 git commit -m "mensagem"
 git push jct-hawkins-2801 julio-cezar-stranger-back:master
