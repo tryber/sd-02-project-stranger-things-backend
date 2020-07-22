@@ -27,3 +27,15 @@ git push upside-down miguel-stranger-things:master
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
+heroku config:set \
+PM2_PUBLIC_KEY=wp8v0k1u35lboa6 \
+PM2_SECRET_KEY="CHAVE_PRIVADA_AQUI" \
+PM2_MACHINE_NAME=heroku-hawkins \
+--app miguelito-hawkins
+heroku config:set \
+PM2_PUBLIC_KEY=wp8v0k1u35lboa6 \
+PM2_SECRET_KEY="CHAVE_PRIVADA_AQUI" \
+PM2_MACHINE_NAME=heroku-upside-down \
+--app miguelito-upside-down
+
+
