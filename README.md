@@ -15,22 +15,31 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
+
 Como são dois deploys de backend, vamos repetir alguns comandos duas vezes.
 
 Subindo backend sem upside-down (hawkins)
 
 `heroku create --remote hawkins --app johnatas-st-hawkins`
+
 `heroku config:set UPSIDE_DOWN=false --app johnatas-st-hawkins`
+
 `git add .`
+
 `git commit -m "Add API Hawkins"`
+
 `git push hawkins johnatas-henrique-stranger-things-backend:master`
 
 Subindo backend com upside-down (upside-down)
 
 `heroku create --remote upside-down --app johnatas-st-upside-down`
+
 `heroku config:set UPSIDE_DOWN=true --app johnatas-st-upside-down`
+
 `git add .`
+
 `git commit -m "Add API upside-down"`
+
 `git push upside-down johnatas-henrique-stranger-things-backend:master`
 
 ### 7 - Monitoramento
