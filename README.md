@@ -15,6 +15,13 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
+Como são dois deploys de backend, vamos repetir alguns comandos duas vezes.
+
+Subindo backend sem upside-down (hawkins)
+heroku create --remote hawkins --app johnatas-st-hawkins
+git add .
+git commit -m "Add API Hawkins"
+git push hawkins johnatas-henrique-stranger-things-backend:master
 
 ### 7 - Monitoramento
 
