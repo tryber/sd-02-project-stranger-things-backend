@@ -39,4 +39,4 @@ heroku config:set \
 PM2_PUBLIC_KEY=PUBLIC KEY \
 PM2_SECRET_KEY=SECRET KEY \
 PM2_MACHINE_NAME=upsideDown \
--a jct-upside-down-2801
+-a jct-upside-down-2801 
