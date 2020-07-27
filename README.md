@@ -36,3 +36,14 @@ git push upside-down johnatas-henrique-stranger-things-backend:master
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
+ heroku config:set \
+ PM2_PUBLIC_KEY=<chave pública do site> \
+ PM2_SECRET_KEY=<chave privada do site> \
+ PM2_MACHINE_NAME=API-Hawkins \
+ --app johnatas-st-hawkins
+
+ heroku config:set \
+ PM2_PUBLIC_KEY=<chave pública do site> \
+ PM2_SECRET_KEY=<chave privada do site> \
+ PM2_MACHINE_NAME=API-Upside-Down \
+ --app johnatas-st-upside-down
