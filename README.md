@@ -31,4 +31,8 @@ git push upside-down lauro-stranger-things:master
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+```
+heroku config:set PM2_PUBLIC_KEY=CHAVE_PUBLICA PM2_SECRET_KEY=CHAVE_PRIVADA PM2_MACHINE_NAME=LAURO_PC --app lauro-stranger-things
+
+heroku config:set PM2_PUBLIC_KEY=CHAVE_PUBLICA PM2_SECRET_KEY=CHAVE_PRIVADA PM2_MACHINE_NAME=LAURO_PC_UD --app lauro-stranger-things-reverse
+```
