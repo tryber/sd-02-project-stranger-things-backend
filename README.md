@@ -20,7 +20,8 @@ Criando o remote upside-down: heroku create --remote upside-down stranger-things
 Listando os remotes: git remote -v;
 Setando variável de ambiente: heroku config:set upsideDown="false" --app stranger-things-bolivar;
 Setando variável de ambiente: heroku config:set upsideDown="true" --app stranger-things-bolivar-down;
-Deploy: git push hawkins master;
+Add e commit: git add .; git commit -m "Modifys"
+Deploy: git push hawkins master; git push upside-down master;
 
 $ git add .
 $ git commit -m "Requisito 6"
