@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
 const makeFilterFn = (params = {}) => ({ name, status, origin }) => {
-  if (params.name && !RegExp(params.name, 'gi').test(name)) return false;
+  if (params.name && !RegExp(params.name, "gi").test(name)) return false;
 
-  if (params.origin && !RegExp(params.origin, 'gi').test(origin)) return false;
+  if (params.origin && !RegExp(params.origin, "gi").test(origin)) return false;
 
-  if (params.status && !RegExp(params.status, 'gi').test(status)) return false;
+  if (params.status && !RegExp(params.status, "gi").test(status)) return false;
 
   return true;
 };
