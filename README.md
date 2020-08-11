@@ -22,7 +22,7 @@ Setando variável de ambiente: heroku config:set upsideDown="false" --app strang
 Setando variável de ambiente: heroku config:set upsideDown="true" --app stranger-things-bolivar-down;
 Add e commit: git add .; git commit -m "Modifys"
 Deploy: git push hawkins master; git push upside-down master;
-
+npm upgrade -g heroku
 $ git add .
 $ git commit -m "Requisito 6"
 $ git push stranger-things pedro-tofani:master
