@@ -14,6 +14,8 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
+git status: On branch bolivar-stranger-things-backend
+
 Fazendo o login no Heroku: heroku login;
 Criando o romete hawkins: heroku create --remote hawkins stranger-things-bolivar;
 Criando o remote upside-down: heroku create --remote upside-down stranger-things-bolivar-down;
