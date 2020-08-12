@@ -12,26 +12,45 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
 ### 6 - Deploy Heroku
 
-Para realizar o deploy do meu backend, fiz o seguinte procedimento:
+git status: On branch bolivar-stranger-things-backend;
 
-git status: On branch bolivar-stranger-things-backend
+- Login no Heroku
 
-Fazendo o login no Heroku: heroku login;
-Criando o romete hawkins: heroku create --remote hawkins stranger-things-bolivar;
-Criando o remote upside-down: heroku create --remote upside-down stranger-things-bolivar-down;
-Listando os remotes: git remote -v;
-Setando variável de ambiente: heroku config:set upsideDown="false" --app stranger-things-bolivar;
-Setando variável de ambiente: heroku config:set upsideDown="true" --app stranger-things-bolivar-down;
-Add e commit: git add .; git commit -m "Modifys"
-Deploy: git push hawkins master; git push upside-down master;
-npm upgrade -g heroku
-$ git add .
-$ git commit -m "Requisito 6"
-$ git push stranger-things pedro-tofani:master
-$ git push stranger-things-up-down pedro-tofani:master
+  - heroku login;
+
+- Remotes:
+
+  - heroku create --remote hawkins stranger-things-bolivar;
+  - heroku create --remote upside-down stranger-things-bolivar-down;
+  - git remote -v;
+
+- Variáveis de Ambiente:
+
+  - heroku config:set
+    upsideDown="false"
+    PM2_PUBLIC_KEY=yv16rnirig4y70n
+    PM2_SECRET_KEY=ehot5qk1n1khzlu
+    PM2_MACHINE_NAME=andersonbolivar-15aa
+    --app stranger-things-bolivar;
+  - heroku config:set
+    upsideDown="true"
+    PM2_PUBLIC_KEY=yv16rnirig4y70n
+    PM2_SECRET_KEY=ehot5qk1n1khzlu
+    PM2_MACHINE_NAME=andersonbolivar-15aa
+    --app stranger-things-bolivar-down;
+
+- Deploy:
+
+  - git add;
+  - git commit -m "BOLIVAR"
+  - git push hawkins bolivar-stranger-things-backend:master;
+  - git push upside-down bolivar-stranger-things-backend:master;
 
 ### 7 - Monitoramento
 
-Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
+- Logs:
 
-`Adicione aqui os comandos utilizados, de maneira sequencial.`
+  - heroku logs --tail --app stranger-things-bolivar;
+  - heroku logs --tail --app stranger-things-bolivar-down;
+  - heroku apps:info stranger-things-bolivar;
+  - heroku apps:info stranger-things-bolivar-down
