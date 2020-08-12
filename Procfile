@@ -1,1 +1,1 @@
-web: pm2-runtime start ecosystem.config.yaml
+web: pm2 start ecosystem.config.yaml
