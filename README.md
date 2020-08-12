@@ -28,14 +28,14 @@ git status: On branch bolivar-stranger-things-backend;
 
   - heroku config:set
     upsideDown="false"
-    PM2_PUBLIC_KEY=yv16rnirig4y70n
-    PM2_SECRET_KEY=ehot5qk1n1khzlu
+    PM2_PUBLIC_KEY=PUBLIC_KEY
+    PM2_SECRET_KEY=SECRET_KEY
     PM2_MACHINE_NAME=andersonbolivar-15aa
     --app stranger-things-bolivar;
   - heroku config:set
     upsideDown="true"
-    PM2_PUBLIC_KEY=yv16rnirig4y70n
-    PM2_SECRET_KEY=ehot5qk1n1khzlu
+    PM2_PUBLIC_KEY=PUBLIC_KEY
+    PM2_SECRET_KEY=SECRET_KEY
     PM2_MACHINE_NAME=andersonbolivar-15aa
     --app stranger-things-bolivar-down;
 
