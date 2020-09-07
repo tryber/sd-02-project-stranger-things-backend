@@ -21,10 +21,15 @@ sudo snap install heroku --classic
 heroku login
 heroku create --remote hawkins stranger-things-216987
 heroku create --remote upside-down stranger-things-216988
-heroku config:set UPSIDE_DOWN=false --remote hawkins
-heroku config:set UPSIDE_DOWN=true --remote upside-down
-git push hawkins master
-git push upside-down master
+<!-- O processo envolveu adicionar a condição "preinstall" nos scripts do package.json e mudar a variavel de ecosistema de cada branch para dizer se a Realidade Alternativa está ou não alterada. -->
+git checkout -b backend-hawkins
+git add .
+git commit -m "deploying hawkins"
+git push hawkins backend-hawkins:master
+git checkout -b backend-upside-down
+git add .
+git commit -m "deploying upside-down"
+git push upside-down upside-down:master
 
 ### 7 - Monitoramento
 
