@@ -36,3 +36,9 @@ git push upside-down upside-down:master
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
+npm install -g pm2
+git checkout backend-hawkins
+pm2 link SECRET_KEY PUBLIC_KEY
+heroku config:set PM2_PUBLIC_KEY=PUBLIC_KEY PM2_SECRET_KEY=SECRET_KEY PM2_MACHINE_NAME=hawkins-backend-server --remote hawkins
+git checkout backend-upside-down
+heroku config:set PM2_PUBLIC_KEY=PUBLIC_KEY PM2_SECRET_KEY=SECRET_KEY PM2_MACHINE_NAME=upside-down-backend-server --remote upside-down
