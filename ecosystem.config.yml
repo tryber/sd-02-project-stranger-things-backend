@@ -6,5 +6,7 @@ apps:
     instances: 2
     max_memory_restart: 200M
     env:
-      DB_PORT: 3000
+      PORT: 3000
       UPSIDE_DOWN: false
+      PM2_PUBLIC_KEY: 0qbmw2xgqlf1gnp
+      PM2_SECRET_KEY: x3880y9imz6wk90
