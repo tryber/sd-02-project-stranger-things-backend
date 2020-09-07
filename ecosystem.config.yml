@@ -1,0 +1,8 @@
+apps:
+  - name: app
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    env_staging:
+      DB_PORT: 3000
+      UPSIDE_DOWN: false
