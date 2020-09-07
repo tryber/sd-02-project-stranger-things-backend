@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(process.env.DB_PORT, () => {
-  console.log(`Escutando na porta ${process.env.DB_PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Escutando na porta ${process.env.PORT}`);
 });
