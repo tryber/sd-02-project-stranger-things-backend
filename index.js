@@ -20,12 +20,12 @@ const hereIsTheUpsideDown = process.env.UPSIDE_DOWN === 'true' ? true : false;
 console.log(hereIsTheUpsideDown)
 
 app.get('/', (req, res) => {
-  const characters = strangerThingsService.search(
-    req.query,
-    hereIsTheUpsideDown
-  );
+  // const characters = strangerThingsService.search(
+  //   req.query,
+  //   hereIsTheUpsideDown
+  // );
 
-  res.status(200).json(characters);
+  res.status(200).send('ert');
 });
 
 app.listen(process.env.DB_PORT, () => {
