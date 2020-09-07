@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   //   hereIsTheUpsideDown
   // );
 
-  res.status(200).send('ert');
+  res.status(200).send('');
 });
 
 app.listen(process.env.DB_PORT, () => {
