@@ -7,4 +7,4 @@ apps:
     max_memory_restart: 200M
     env:
       DB_PORT: 3000
-      UPSIDE_DOWN: false
+      UPSIDE_DOWN: true
