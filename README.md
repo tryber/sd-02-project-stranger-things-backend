@@ -16,6 +16,14 @@ Para realizar o deploy do meu backend, fiz o seguinte procedimento:
 
 `Adicione aqui os comandos utilizados, de maneira sequencial.`
 
+sudo apt install snapd
+sudo snap install heroku --classic
+heroku login
+heroku create --remote hawkins stranger-things-216987
+heroku create --remote upside-down stranger-things-216988
+heroku config:set UPSIDE_DOWN=false --remote hawkins
+heroku config:set UPSIDE_DOWN=true --remote upside-down
+
 ### 7 - Monitoramento
 
 Para conseguir realizar o monitoramento da minha API, fiz o seguinte procedimento:

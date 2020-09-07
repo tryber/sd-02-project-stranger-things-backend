@@ -1,8 +1,10 @@
 apps:
-  - name: app
+  - name: stranger-things
     script: ./index.js
     exec_mode: cluster
+    watch: false
     instances: 2
-    env_staging:
+    max_memory_restart: 200M
+    env:
       DB_PORT: 3000
       UPSIDE_DOWN: false
