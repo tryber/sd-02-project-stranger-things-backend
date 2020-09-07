@@ -21,8 +21,8 @@ sudo snap install heroku --classic
 heroku login
 heroku create --remote hawkins stranger-things-216987
 heroku create --remote upside-down stranger-things-216988
-heroku config:set UPSIDE_DOWN=false --remote hawkins
-heroku config:set UPSIDE_DOWN=true --remote upside-down
+<!-- heroku config:set UPSIDE_DOWN=false --remote hawkins
+heroku config:set UPSIDE_DOWN=true --remote upside-down -->
 git push hawkins master
 git push upside-down master
 
